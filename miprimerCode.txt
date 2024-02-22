@@ -1,0 +1,34 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int Num1 =0, Num2=0, Num3 =0;
+        double RaizCuadrada=0;
+        double RaizCubica =0;
+        double Elevado=0;
+
+        Console.WriteLine ("Buen día, por favor ingrese 3 numero como se indica");
+        Console.WriteLine("======================");
+        Console.WriteLine("Primer Numero entero, este numero se elevará al cuadrado");
+        Num1=Int32.Parse(Console.ReadLine());
+        Console.WriteLine("______________________");
+        Console.WriteLine("Segundo Numero entero, a este numero se le sacará la raiz cuadrada");
+        Num2=Int32.Parse(Console.ReadLine());
+        Console.WriteLine("______________________");
+        Console.WriteLine("Tercer Numero entero, a este numero se le sacará la raiz cubica");
+        Num3=Int32.Parse(Console.ReadLine());
+        Console.WriteLine("=======================");
+        Console.WriteLine("        Solución");
+        Console.WriteLine("=======================");
+        
+        Elevado = Num1^2;
+        RaizCuadrada = Num2^(1/2);
+        RaizCubica = Num3^(1/3);
+        
+        Console.WriteLine("El cuadrado del numero: "+Num1+" es: "+Elevado);
+        Console.WriteLine("La raiz cuadrada del numero: "+Num2+" es: "+RaizCuadrada);
+        Console.WriteLine("La raiz cubica del numero: "+Num3+" es: "+RaizCubica); 
+    }
+}
